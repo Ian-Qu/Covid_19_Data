@@ -1,0 +1,1 @@
+Creates bar charts showcasing data on positive cases of Covid in 2020
