@@ -1,6 +1,8 @@
 # US COVID State Dashboard (2020 Only)
-
 Kaggle source: https://www.kaggle.com/datasets/sudalairajkumar/covid19-in-usa?select=us_states_covid19_daily.csv
+
+## Dashboard Link
+You can view the website here: https://2020unitedstatescovid19datavisualization-2ojqvkssbtj6eliqekcrd.streamlit.app/
 
 This project is a Python, SQL, and Streamlit analytics workflow built from historical U.S. state-level COVID-19 data for 2020 only. It cleans the raw CSV, stores the transformed data in SQLite, and provides an interactive dashboard for state-level trend analysis and multi-state comparison.
 
