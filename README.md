@@ -6,10 +6,10 @@ You can view the website here: https://2020unitedstatescovid19datavisualization-
 
 This project is a Python, SQL, and Streamlit analytics workflow built from historical U.S. state-level COVID-19 data for 2020 only. It cleans the raw CSV, stores the transformed data in SQLite, and provides an interactive dashboard for state-level trend analysis and multi-state comparison.
 
-## Program purpose
+## Program Purpose
 This project is designed to show how Python can be used for more than charting alone. It demonstrates the full lifecycle of a small analytics application, from raw data ingestion to cleaned storage to user facing visual exploration.
 
-## Dataset focus
+## Dataset Focus
 The original CSV contains many columns, but this project focuses on the most useful state level metrics:
 - `date`
 - `state`
@@ -35,7 +35,7 @@ These are cleaned and renamed into:
 - `new_negative_tests`
 - `new_deaths`
 
-## Folder structure
+## Folder Structure
 ```text
 data/
   processed/
