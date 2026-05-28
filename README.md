@@ -1,16 +1,19 @@
 # US COVID State Dashboard (2020 Only)
-Kaggle source: https://www.kaggle.com/datasets/sudalairajkumar/covid19-in-usa?select=us_states_covid19_daily.csv
 
-## Dashboard Link
-You can view the website here: https://2020unitedstatescovid19datavisualization-2ojqvkssbtj6eliqekcrd.streamlit.app/
+Kaggle source: [US COVID-19 in USA](https://www.kaggle.com/datasets/sudalairajkumar/covid19-in-usa?select=us_states_covid19_daily.csv)
+
+Dashboard Link: [View the website](https://2020unitedstatescovid19datavisualization-2ojqvkssbtj6eliqekcrd.streamlit.app/)
 
 This project is a Python, SQL, and Streamlit analytics workflow built from historical U.S. state-level COVID-19 data for 2020 only. It cleans the raw CSV, stores the transformed data in SQLite, and provides an interactive dashboard for state-level trend analysis and multi-state comparison.
 
 ## Program Purpose
-This project is designed to show how Python can be used for more than charting alone. It demonstrates the full lifecycle of a small analytics application, from raw data ingestion to cleaned storage to user facing visual exploration.
+
+This project demonstrates the full lifecycle of a small analytics application, from raw data ingestion to cleaned storage and finally visual exploration.
 
 ## Dataset Focus
-The original CSV contains many columns, but this project focuses on the most useful state level metrics:
+
+The original CSV contains 55 total columns, but this project focuses on the most useful state-level metrics:
+
 - `date`
 - `state`
 - `positive`
@@ -23,6 +26,7 @@ The original CSV contains many columns, but this project focuses on the most use
 - `deathIncrease`
 
 These are cleaned and renamed into:
+
 - `date`
 - `state_code`
 - `state_name`
@@ -35,20 +39,16 @@ These are cleaned and renamed into:
 - `new_negative_tests`
 - `new_deaths`
 
-## Folder Structure
-```text
-data/
-  processed/
-    covid_state_clean.csv
-  raw/
-    us_states_covid19_daily.csv
-sql/
-  queries.sql
-  schema.sql
-src/
-  app.py
-  db.py
-  etl.py
-README.md
-requirements.txt
-```
+## Dashboard Preview
+
+[![Dashboard preview 1](images/dashboard_preview_1.png)](images/dashboard_preview_1.png)
+
+[![Dashboard preview 2](images/dashboard_preview_2.png)](images/dashboard_preview_2.png)
+
+## Trends and Insights
+
+The dashboard is designed to make the major 2020 patterns easier to explore across states and over time. The data shows strong variation in cumulative case counts, hospitalizations, and deaths between states, with California, Texas, Florida, New York, and Illinois among the states with the highest totals by the end of the year.
+
+It also highlights how the pandemic changed across months. Reported new cases peaked in November 2020, while reported deaths peaked in April 2020, showing that the timing of case growth and mortality did not always move in the same direction.
+
+The state comparison views help surface these differences quickly, making the project useful for both technical exploration and public health storytelling. By pairing cleaning, SQLite storage, and interactive visualization, the project shows how Python can support a complete analytics workflow rather than just static charting.
